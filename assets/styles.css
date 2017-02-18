@@ -38,7 +38,8 @@ a {
     right: 5%;
     transform: translate(50%,50%);
 }
-.navbar-default .navbar-toggle:hover {
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
     background-color: #d42551;
 }
 .navbar-default .navbar-toggle span.icon-bar {
@@ -173,7 +174,7 @@ a {
     padding-left: 4%;
 }
 .giftsMain .textContent:last-child {
-    margin-bottom: 5%;
+    margin-bottom: 8%;
 }
 /* Contact */
 .contactMain ul {
