@@ -1,0 +1,239 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    padding: 0;
+}
+a {
+    color: #B13939;
+}
+/* navbar */
+.navbar-default {
+    background-color: #fffabe;
+    border: none;
+    min-height: 72px;
+    position: relative;
+}
+.navbar {
+    margin-bottom: 0;
+}
+/* title */
+.navbar-brand > img {
+    margin: 2% 0 0 5%;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #5E5E5E;
+}
+/* navbar right */
+.navbar-right {
+    margin-top: 1%;
+    font-size: 1em;
+}
+.navbar-default .navbar-toggle {
+    background-color: #df5277;
+    border: none;
+    position: absolute;
+    top: -10%;
+    right: 5%;
+    transform: translate(50%,50%);
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #d42551;
+}
+.navbar-default .navbar-toggle span.icon-bar {
+    background-color: #fffabe;
+}
+/* dropdown */
+.navbar-default .navbar-nav > li {
+    background-color: #fffabe;
+}
+/* link */
+.navbar-default .navbar-nav > li > a {
+    color: #515151;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #d42551;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #E7E7E7;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #D5D5D5;
+}
+/* Main content */
+.homeMain, .ourMacsMain, .giftsMain, .contactMain {
+    color: #6a6969;
+}
+.hero img {
+    width: 100%;
+    margin-bottom: 3%;
+}
+.heading {
+    font-size: 1.429em;
+    padding: 3% 0;
+    color: #6a6969;
+}
+.homeImg {
+    padding-top: 5%;
+}
+/* Schedule */
+.hours {
+    margin: 3% 0;
+}
+.schedule {
+    height: 140px;
+    width: 13%;
+    background-color: #fffabe;
+    margin: .3em .3em .3em .5em;
+    padding: 0;
+    list-style-type: none;
+    color: #6a6969;
+    font-size: 1em;
+}
+.schedule li {
+    font-size: 75%;
+    padding: 3.5%;
+    height: 25%;
+}
+.schedule li:first-of-type {
+    font-size: 1em;
+}
+.schedule li > .smallMac {
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+.schedule .lastFlavor {
+    color: white;
+}
+.monday .lastFlavor {
+    background-color: #824603;
+}
+.wednesday .lastFlavor {
+    background-color: #df5277;
+}
+.friday .lastFlavor {
+    background-color: #a2304e;
+}
+.sunday .lastFlavor {
+    background-color: #c39005;
+}
+.thumbnail {
+    border: none;
+}
+
+/* Footer */
+.footer {
+    background-color: #df5277;
+    min-height: 80px;
+    padding: 0;
+    text-align: center;
+    color: white;
+}
+.footer .footerInfo {
+    padding: 1% 0;
+    font-size: .9em;
+}
+.footer img {
+    padding: 0 1%;
+}
+.footer .copyright {
+    font-size: .7em;
+}
+
+/* Our macarons */
+.ourMacsMain {
+    background-image: url("images/our-macarons-background.png");
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
+}
+.ourMacsMain .heading, .ourMacsMain .textContent {
+    padding-left: 4%;
+}
+.ourMacsMain .textContent:last-of-type {
+    margin: 5% 0;
+}
+/* Gifts and Parties */
+.giftsMain {
+    background-image: url("images/gifts-parties-background.png");
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
+}
+.giftsMain .heading, .giftsMain .textContent {
+    padding-left: 4%;
+}
+.giftsMain .textContent:last-child {
+    margin-bottom: 8%;
+}
+/* Contact */
+.contactMain ul {
+    list-style-type: none;
+    padding: 0;
+}
+.contactForm input, .contactForm button, .contactForm textarea {
+    margin-top: 3%;
+    background-color: #f5f5f5;
+    border: none;
+}
+.contactForm button {
+    padding: 2% 15%;
+    border: none;
+}
+.contactMain .contactSchedule, .contactInfo li:nth-child(2),
+.contactInfo li:nth-child(3), .contactInfo li:nth-child(4), .contactForm {
+    margin-bottom: 5%;
+}
+.contactImg {
+    margin: 5% 0 0 3%;
+}
+
+@media screen and (max-width: 992px) {
+    .schedule {
+        width: 12%;
+        margin: 1% 1% 1% 1%;
+    }
+    .schedule li {
+        font-size: 65%;
+    }
+    .schedule .smallMac {
+        width: 15%;
+    }
+    .contactImg {
+        display: none;
+    }
+}
+@media screen and (max-width: 627px) {
+    .schedule {
+        width: 47%;
+    }
+    .schedule li {
+        font-size: 75%;
+    }
+    .schedule .smallMac {
+        width: initial;
+    }
+    .schedule:last-child {
+        width: 96%;
+        height: auto;
+    }
+    .homeImg {
+        display: none;
+    }
+    .rightContent {
+        width: 100%;
+    }
+    .ourMacsMain, .giftsMain {
+        background-image: none;
+    }
+}
